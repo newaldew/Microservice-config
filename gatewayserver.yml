@@ -5,7 +5,7 @@ eureka:
   instance:
     preferIpAddress: true
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    fetchRegistry: true #Means gatewayserver service will fetch registry details(Ip address) from eurekaserver whenever it wants to connects with any MS.
+    registerWithEureka: true #Means do you want to register yourself(gatewayserver) as a client in eurekaserver
     serviceUrl:
       defaultZone: "http://localhost:8070/eureka/"
